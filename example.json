@@ -1,0 +1,23 @@
+{lan_mac::00:21:29:9F:5C:F2}
+{wan_mac::00:21:29:9F:5C:F3}
+{wl_mac::00:21:29:9F:5C:F4}
+{lan_ip::192.168.1.1}
+{wl_channel::6}
+{wl_radio::Radio is On}
+{wl_xmit::71 mW}
+{wl_rate::130 Mbps}
+{packet_info::SWRXgoodPacket=47044457;SWRXerrorPacket=1453;SWTXgoodPacket=66591439;SWTXerrorPacket=6156;}
+{wl_mode_short::ap}
+{lan_proto::dhcp}
+{mem_info::,'total:','used:','free:','shared:','buffers:','cached:','Mem:','29913088','17575936','12337152','0','1298432','3792896','Swap:','0','0','0','MemTotal:','29212','kB','MemFree:','12048','kB','MemShared:','0','kB','Buffers:','1268','kB','Cached:','3704','kB','SwapCached:','0','kB','Active:','3344','kB','Inactive:','1648','kB','HighTotal:','0','kB','HighFree:','0','kB','LowTotal:','29212','kB','LowFree:','12048','kB','SwapTotal:','0','kB','SwapFree:','0','kB'}
+{active_wireless::'xx:xx:xx:xx:74:13','eth0','N/A','N/A','N/A','-57','-88','31','453','xx:xx:xx:xx:55:F8','eth0','N/A','N/A','N/A','-45','-88','43','602','xx:xx:xx:xx:96:B5','eth0','N/A','N/A','N/A','-41','-88','47','651','xx:xx:xx:xx:26:A1','eth0','N/A','N/A','N/A','-51','-88','37','527','xx:xx:xx:xx:1A:03','eth0','N/A','N/A','N/A','-49','-88','39','552'}
+{active_wds::}
+{dhcp_leases:: 'Justins-MBP','192.168.1.125','xx:xx:xx:xx:96:B5','1 day 00:00:00','125','Drews-MBP','192.168.1.136','xx:xx:xx:xx:55:F8','1 day 00:00:00','136','*','192.168.1.128','xx:xx:xx:xx:49:ED','1 day 00:00:00','128','iPhone','192.168.1.140','xx:xx:xx:xx:74:13','1 day 00:00:00','140','TristransiPhone','192.168.1.102','xx:xx:xx:xx:1F:88','1 day 00:00:00','102','raspberrypi','192.168.1.103','xx:xx:xx:xx:26:A1','1 day 00:00:00','103','Tristrams-MBP','192.168.1.101','xx:xx:xx:xx:DF:B5','1 day 00:00:00','101','HP48111C','192.168.1.112','xx:xx:xx:xx:1A:03','1 day 00:00:00','112'}
+{uptime:: 23:11:37 up 22 days,  6:01, load average: 0.04, 0.01, 0.00}
+{ipinfo::&nbsp;IP: 10.1.10.57}
+{wan_ipaddr::10.1.10.57}
+{gps_text::}
+{gps_lat::}
+{gps_lon::}
+{gps_alt::}
+{gps_sat::}

@@ -1,6 +1,6 @@
-{lan_mac::00:21:29:9F:5C:F2}
-{wan_mac::00:21:29:9F:5C:F3}
-{wl_mac::00:21:29:9F:5C:F4}
+{lan_mac::00:00:00:00:00:00}
+{wan_mac::00:00:00:00:00:00}
+{wl_mac::00:00:00:00:00:00}
 {lan_ip::192.168.1.1}
 {wl_channel::6}
 {wl_radio::Radio is On}

@@ -5,6 +5,11 @@ __pycache__/
 # C extensions
 *.so
 
+.DS_Store
+db.sqlite3
+settings.json
+
+
 # Distribution / packaging
 .Python
 env/

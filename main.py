@@ -1,15 +1,23 @@
 import re,requests,json
 
+class ExternalSettings:
+	@staticmethod
+	def get(setting):
+		f = open('settings.json','r')
+		file_string = f.read()
+		oSettings = json.loads(file_string)
+		return oSettings[setting]
+
 class ReportManager:
 	def __init__(self):
-		self.POST_URL = "http://localhost"
-		self.oParser = DDWRTInfoParser()
+		self.POST_URL = ExternalSettings.get(setting="post_url")
+		self.oParser = DDWRTInfoParser(bShowActiveOnly = False)
 		clients = self.oParser.getClientCount()
-		print "Found (",clients,") active clients, sending report...",
+		print "Found (",clients,") active clients, sending report..."
 		response = self.sendReport()
+		print response
 		print "Sent!"
 	def sendReport(self):
-		# json.dumps(x.getClients())
 		data = json.dumps(self.oParser.getClients())
 		dataJson = {"data":data}
 		post = requests.post(self.POST_URL,data=dataJson)
@@ -46,10 +54,11 @@ class DDWRTInfoParser:
 
 	def getRouterInfo(self):
 		if self.USE_EXAMPLE_JSON:
-			f = open('example.json','r')
+			f = open( ExternalSettings.get(setting="example_file") ,'r')
 			return f.read()
 		else:
-			r = requests.get("http://192.168.1.1/Info.live.htm")
+			router_ip = ExternalSettings.get(setting="router_ip")
+			r = requests.get("http://"+router_ip+"/Info.live.htm")
 			return r.contents
 
 	def getLeasesInfo( self, matches, activeLeases ):

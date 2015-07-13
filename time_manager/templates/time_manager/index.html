@@ -1,0 +1,9 @@
+{% if employee_list %}
+  <ul>
+    {% for employee in employee_list %}
+    <li><a href="{% url 'time_manager:detail' employee.id %}">{{ employee.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No employees were found.</p>
+{% endif %}

@@ -1,0 +1,13 @@
+<h1>{{ employee }}</h1>
+<h3>Time Periods:</h3>
+<ul>
+  {% for timeperiod in employee.timeperiod_set.all %}
+    <li>{{ timeperiod }}</li>
+  {% endfor %}
+</ul>
+<h3>State Changes:</h3>
+<ul>
+  {% for statechange in employee.statechange_set.all %}
+    <li>{{ statechange }}</li>
+  {% endfor %}
+</ul>

@@ -29,7 +29,7 @@ class DDWRTInfoParser:
 	def __init__(self, bShowActiveOnly = True ):
 		self.bShowActiveOnly = bShowActiveOnly
 		self.Clients = {}
-		self.USE_EXAMPLE_JSON = True
+		self.USE_EXAMPLE_JSON = ExternalSettings.get(setting="use_example_json")
 
 		ActivePattern= re.compile(ur'{active_wireless::(.*)}')
 		DHCP_Pattern = re.compile(ur'{dhcp_leases::.*}')
